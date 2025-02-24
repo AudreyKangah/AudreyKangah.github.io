@@ -1,69 +1,49 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useState } from "react";
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-const projects = [
-  {
-    id: 1,
-    title: "Analyse des ventes",
-    description: "Tableau de bord interactif des ventes.",
-    tool: "Power BI",
-    dashboardUrl: "https://app.powerbi.com/view?r=XXXXXX",
-    githubUrl: "https://github.com/ton-repo/projet-ventes"
-  },
-  {
-    id: 2,
-    title: "Performance Marketing",
-    description: "Analyse des performances des campagnes marketing.",
-    tool: "Looker Studio",
-    dashboardUrl: "https://lookerstudio.google.com/reporting/XXXXXX",
-    githubUrl: "https://github.com/ton-repo/projet-marketing"
-  }
-];
+    <header>
+        <h1>Portfolio Data Analyst</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-function Home() {
-  return (
-    <div className="text-center p-10">
-      <h1 className="text-3xl font-bold">Bienvenue sur mon Portfolio</h1>
-      <p className="mt-4">Découvrez mes projets Data avec des dashboards interactifs.</p>
-      <Link to="/projects" className="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Voir mes projets</Link>
-    </div>
-  );
-}
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Passionné par l’analyse de données, je crée des tableaux de bord interactifs avec Power BI, Looker Studio et Excel.</p>
+    </section>
 
-function Projects() {
-  return (
-    <div className="p-10">
-      <h2 className="text-2xl font-bold mb-4">Mes Projets</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project) => (
-          <div key={project.id} className="border p-4 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p>{project.description}</p>
-            <p className="text-gray-600">Outil : {project.tool}</p>
-            <div className="mt-4 flex space-x-4">
-              <a href={project.dashboardUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500">Voir le Dashboard</a>
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-500">Voir le Code</a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project">
+            <h3>Analyse des Ventes</h3>
+            <p>Dashboard interactif réalisé avec Power BI.</p>
+            <a href="https://app.powerbi.com/view?r=XXXXXX" target="_blank">Voir le Dashboard</a>
+            <a href="https://github.com/USERNAME/projet-ventes" target="_blank">Voir le Code</a>
+        </div>
+        <div class="project">
+            <h3>Performance Marketing</h3>
+            <p>Analyse des campagnes marketing avec Looker Studio.</p>
+            <a href="https://lookerstudio.google.com/reporting/XXXXXX" target="_blank">Voir le Dashboard</a>
+            <a href="https://github.com/USERNAME/projet-marketing" target="_blank">Voir le Code</a>
+        </div>
+    </section>
 
-function App() {
-  return (
-    <Router>
-      <nav className="p-4 bg-gray-800 text-white flex space-x-4">
-        <Link to="/">Accueil</Link>
-        <Link to="/projects">Projets</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-    </Router>
-  );
-}
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Retrouvez-moi sur <a href="https://linkedin.com/in/USERNAME" target="_blank">LinkedIn</a> ou contactez-moi par email.</p>
+    </section>
 
-export default App;
+</body>
+</html>
