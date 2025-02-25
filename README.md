@@ -34,6 +34,7 @@
 		</div>
     </section>
 
+<!--création d'une mise en page de projets-->
     <section id="projects">
         <h2>Mes Projets</h2>
         <div class="project">
