@@ -8,20 +8,30 @@
 </head>
 <body>
 
+<!--creating Menu Tabs and Log-->
     <header>
         <h1>Portfolio Data Analyst</h1>
         <nav>
             <ul>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Experiences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Passionné par l’analyse de données, je crée des tableaux de bord interactifs avec Power BI, Looker Studio et Excel.</p>
+<!--Création d'une mise en page À propos de moi-->
+    <section class="banner" id="about">
+        <div class="textBx">
+			<h2>Bonjour,je suis <br> <span>Audrey Marlene KANGAH</span></h2>
+			<h3>Je suis une data analyst </h3>
+            <p>Passionné par l’analyse de données, je crée des tableaux de bord interactifs avec Power BI, Looker Studio et Excel.</p>
+			<a href="#experience" class="btn">Experiences</a>
+		</div>
+		<div class="w50">
+				<img src="img/me.jpg" class="proPicture">
+		</div>
     </section>
 
     <section id="projects">
@@ -37,6 +47,7 @@
             <p>Analyse des campagnes marketing avec Looker Studio.</p>
             <a href="https://lookerstudio.google.com/reporting/XXXXXX" target="_blank">Voir le Dashboard</a>
             <a href="https://github.com/USERNAME/projet-marketing" target="_blank">Voir le Code</a>
+<!-- Répétez la div timeline-item pour chaque entrée d'expérience -->
         </div>
     </section>
 
