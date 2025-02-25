@@ -115,13 +115,33 @@ h2 {
     color: #007BFF;
 }
 
-/* Contact */
-#contact a {
-    color: #007BFF;
-    font-weight: bold;
-    text-decoration: none;
+/* Bouton CV */
+.cv-container {
+    margin-top: 20px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.cv-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cv-button:hover {
+    background-color: #218838;
+}
+
+/* Contact */
+.email-link {
+    font-size: 18px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #c9302c;
 }
