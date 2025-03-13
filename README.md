@@ -1,88 +1,191 @@
+
 <!DOCTYPE html>
+<!-- Créé par CodingNepal -->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Data Analyst - Audrey Marlene KANGAH</title>
+    <title>Portfolio Personnel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
-
-    <header>
-        <h1>Portfolio Data Analyst</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Accueil</a></li>
+                <li><a href="#about" class="menu-btn">À propos</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Compétences</a></li>
+                <li><a href="#teams" class="menu-btn">Équipe</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>À propos de moi</h2>
-                <p>Bonjour, je suis <strong>Audrey Marlene KANGAH</strong>, Analyste de données.</p>
-                <p>Passionnée par l’analyse de données, je crée des tableaux de bord interactifs avec Power BI, Looker Studio et Excel.</p>
-            </div>
-            <div class="about-image">
-                <img src="profile.jpg" alt="Audrey Marlene KANGAH">
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Analyse des Ventes</h3>
-            <p>Dashboard interactif réalisé avec Power BI.</p>
-            <a href="https://app.powerbi.com/view?r=XXXXXX" target="_blank">Voir le Dashboard</a>
-            <a href="https://github.com/USERNAME/projet-ventes" target="_blank">Voir le Code</a>
-            <a href="description_projet_ventes.pdf" target="_blank">Description du projet</a>
-        </div>
-        <div class="project">
-            <h3>Performance Marketing</h3>
-            <p>Analyse des campagnes marketing avec Looker Studio.</p>
-            <a href="https://lookerstudio.google.com/reporting/XXXXXX" target="_blank">Voir le Dashboard</a>
-            <a href="https://github.com/USERNAME/projet-marketing" target="_blank">Voir le Code</a>
-            <a href="description_projet_marketing.pdf" target="_blank">Description du projet</a>
+    </nav>
+    
+    <!-- Section Accueil -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Bonjour, je m'appelle</div>
+                <div class="text-2">Prakash Shashi</div>
+                <div class="text-3">Et je suis <span class="typing"></span></div>
+                <a href="#">Engagez-moi</a>
+            </div>
         </div>
     </section>
 
-    <section id="experiences">
-        <h2>Mes Expériences</h2>
-        <div class="experience">
-            <h3>Entreprise 1 - Data Analyst</h3>
-            <p>• Analyse des ventes et optimisation des KPIs.</p>
-            <p>• Création de dashboards interactifs pour le suivi de performance.</p>
-            <p>• Automatisation des reportings via Power BI et Excel.</p>
-        </div>
-        <div class="experience">
-            <h3>Entreprise 2 - Data Analyst</h3>
-            <p>• Analyse des campagnes marketing et segmentation client.</p>
-            <p>• Modélisation de données et création d’indicateurs clés.</p>
-            <p>• Amélioration des prises de décision grâce aux insights data.</p>
-        </div>
-        <div class="experience">
-            <h3>Entreprise 3 - Business Intelligence Analyst</h3>
-            <p>• Développement de solutions BI pour le suivi des performances.</p>
-            <p>• Création et maintenance de tableaux de bord dynamiques.</p>
-            <p>• Formation des équipes sur l’utilisation des outils BI.</p>
-        </div>
-
-        <!-- Bouton Télécharger le CV -->
-        <div class="cv-container">
-            <a href="https://github.com/USERNAME/portfolio-data-analyst/raw/main/CV_Audrey_KANGAH.pdf" class="cv-button" download>Télécharger mon CV</a>
+    <!-- Section À propos -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile-1.jpeg" alt="Photo de Prakash">
+                </div>
+                <div class="column right">
+                    <div class="text">Je suis Prakash et je suis <span class="typing-2"></span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="#">Télécharger CV</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Retrouvez-moi sur <a href="https://linkedin.com/in/USERNAME" target="_blank">LinkedIn</a> ou contactez-moi par email :</p>
-        <p><a href="mailto:audrey.kangah@gmail.com" class="email-link">audrey.kangah@gmail.com</a></p>
+    <!-- Section Services -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Mes services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Design Web</div>
+                        <p>Lorem ipsum dolor sit amet consectetur...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Publicité</div>
+                        <p>Lorem ipsum dolor sit amet consectetur...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Conception d'Applications</div>
+                        <p>Lorem ipsum dolor sit amet consectetur...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Section Compétences -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Mes compétences</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mes compétences créatives & expériences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Me contacter</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Entrer en contact</div>
+                    <p>Lorem ipsum dolor sit amet consectetur...</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nom</div>
+                                <div class="sub-title">Prakash Shashi</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Adresse</div>
+                                <div class="sub-title">Surkhet, Népal</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">abc@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Envoyez-moi un message</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nom" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Sujet" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <span>Créé par <a href="https://www.codingnepalweb.com">CodingNepal</a> | <span class="far fa-copyright"></span> 2020 Tous droits réservés.</span>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
