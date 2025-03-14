@@ -19,6 +19,17 @@ body {
 section {
     background-color: #121212;
 }
+.profile-container {
+    text-align: center; /* Centre l'image horizontalement */
+    width: 100%;
+}
+.proPicture {
+    width: 150px; /* Taille ajustable */
+    height: 150px;
+    border-radius: 50%; /* Rend l'image ronde */
+    object-fit: cover; /* Évite la déformation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+}
 /* barre de défilement personnalisée */
 ::-webkit-scrollbar {
     width: 10px;
