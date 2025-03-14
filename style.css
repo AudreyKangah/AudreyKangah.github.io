@@ -361,19 +361,22 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
-    width: 80%;
+.skills-content .right .css::before{
+    width: 30%;
 }
-.skills-content .right .php::before{
-    width: 50%;
+.skills-content .right .js::before{
+    width: 20%;
+}
+.skills-content .right .excel::before{
+    width: 70%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 75%;
+}
+.skills-content .right .powerbi::before{
+    width: 65%;
 }
 /* style de section des équipes */
 .teams .title::after{
