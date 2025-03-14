@@ -10,8 +10,9 @@ html{
     scroll-behavior: smooth;
 }
 /* Appliquer un fond noir à toute la page */
-body {
-    background-color: #121212; /* Noir profond */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
