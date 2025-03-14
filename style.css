@@ -442,7 +442,7 @@ section .title::after{
 }
 /* style de la section de contact */
 .email-link {
-    font-size: 18px;
+    font-size: 25px;
     color: #d9534f;
     font-weight: bold;
 }
