@@ -451,18 +451,22 @@ section .title::after{
     color: #c9302c;
 }
 /* style de la section de pied de page */
-footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
+.social {
+    display: flex; /* Aligner les icônes sur une seule ligne */
+    justify-content: center; /* Centrer les icônes horizontalement */
+    gap: 20px; /* Ajouter un espace entre les icônes */
+    margin-top: 10px;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
+
+.icon {
+    font-size: 30px; /* Taille des icônes */
+    color: #333; /* Couleur des icônes */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    transition: color 0.3s ease-in-out;
 }
-footer span a:hover{
-    text-decoration: underline;
+
+.icon:hover {
+    color: crimson; /* Changement de couleur au survol */
 }
 /* démarrage de la requête multimédia réactive */
 @media (max-width: 1104px) {
