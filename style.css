@@ -1,4 +1,4 @@
-/*  import google fonts */
+/*  importer les polices Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
@@ -10,11 +10,16 @@ html{
     scroll-behavior: smooth;
 }
 /* Appliquer un fond noir à toute la page */
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+body {
+    background-color: #121212; /* Noir profond */
+    color: #ffffff; /* Texte en blanc */
 }
-/* custom scroll bar */
+
+/* S'assurer que les sections ont un fond noir */
+section {
+    background-color: #121212;
+}
+/* barre de défilement personnalisée */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -27,7 +32,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/* all similar content styling codes */
+/* tous les codes de style de contenu similaires */
 section{
     padding: 100px 0;
 }
@@ -77,7 +82,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-/* navbar styling */
+/* style de la barre de navigation */
 .navbar{
     position: fixed;
     width: 100%;
@@ -125,7 +130,7 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
-/* menu btn styling */
+/* style du bouton de menu */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -159,7 +164,7 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-/* home section styling */
+/* style de la section d'accueil */
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -209,7 +214,7 @@ section .title::after{
     color: crimson;
     background: none;
 }
-/* about section styling */
+/* à propos du style des sections */
 .about .title::after{
     content: "who i am";
 }
@@ -252,7 +257,7 @@ section .title::after{
     color: crimson;
     background: none;
 }
-/* services section styling */
+/* style de la section des services */
 .services, .teams{
     color:#fff;
     background: #111;
@@ -297,7 +302,7 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-/* skills section styling */
+/* style de la section de compétences */
 .skills .title::after{
     content: "what i know";
 }
@@ -370,7 +375,7 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-/* teams section styling */
+/* style de section des équipes */
 .teams .title::after{
     content: "who with me";
 }
@@ -432,7 +437,7 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
-/* contact section styling */
+/* style de la section de contact */
 .contact .title::after{
     content: "get in touch";
 }
@@ -527,7 +532,7 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
+/* style de la section de pied de page */
 footer{
     background: #111;
     padding: 15px 23px;
@@ -541,7 +546,7 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-/* responsive media query start */
+/* démarrage de la requête multimédia réactive */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
