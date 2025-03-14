@@ -24,7 +24,7 @@ section {
     width: 100%;
 }
 .proPicture {
-    width: 150px; /* Taille ajustable */
+    width: 150px; 
     height: 150px;
     border-radius: 50%; /* Rend l'image ronde */
     object-fit: cover; /* Évite la déformation */
@@ -233,7 +233,7 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
+    height: 600px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
